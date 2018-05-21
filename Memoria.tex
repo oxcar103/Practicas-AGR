@@ -108,7 +108,7 @@
 		\mathbb{P}_n$.
 		
 		% Pág 17
-		\item ** En las condiciones del ejercicio anterior, calcular todos los $\mathbb{R}-submódulos$ de
+		\item ** En las condiciones del ejercicio anterior, calcular todos los $\mathbb{R}$-submódulos de
 		$\mathbb{P}_n$.
 		\subsubsection*{Solución}
 		En el ejercicio anterior vimos los módulos de la forma $<M_k>$, que eran los que formaban la serie de
@@ -125,6 +125,27 @@
 		
 		Entonces, es inmediato comprobar que $ <M_k> \cong <\{p, \delta p, \delta^2 p, \dots, \delta^k p\}>$, y
 		se tiene que $<M_k> \subseteq N_p$ pero por cómo hemos definido $N_p$ se deduce que $<M_k> = N_p$.
+		
+		% Pág 19
+		\item ** Supongamos $T: V \rightarrow V$ un endomorfismo $K$-lineal, donde $V$ es un espacio vectorial de
+		dimensión finita que consideramos, como de costumbre, como un $K$-módulo. Supongamos que el polinomio
+		mínimo $m(X)$ de $T$ es irreducible en $K[X]$. Demostrar que existen $K[X]$-submódulos simples $V_1, \dots,
+		V_t$ de $V$ tal que $V = V_1 \bigoplus \dots \bigoplus V_t$ como $K$-módulo.
+		\subsubsection*{Solución}
+		Dado que el polinomio mínimo $m(X)$ es irreducible $\Rightarrow$ el ideal $(m(X))$ es maximal, por tanto,
+		se tiene que el cociente $K[X]/_{(m(X))}$ es un cuerpo que también denotaremos $F$.
+		
+		Como tenemos que $K[X] \rightarrow End_K(V)$, al aplicarle el Primer Teorema de Isomorfía, podemos
+		descomponerlo como $K[X] \rightarrow K[X]/_{(m(X))} \hookrightarrow End_K(V)$, de lo que se concluye que
+		$V$ es $F$-espacio vectorial.
+		
+		Ahora, dado que $V$ tiene una base finita como $K$-espacio vectorial y que $K \subseteq F$, tenemos que
+		$V$ tiene un sistema de generadores finito como $F$-espacio vectorial del que, en virtud de un corolario
+		visto en clase, podemos extraer un subconjunto $\{V_1, V_2, \dots, V_t\}$que genere una base, esto es,
+		$V = V_1 \bigoplus V_2 \bigoplus \dots \bigoplus V_t$.
+		
+		Finalmente, por la forma de construcción de esta base, tenemos que sus elementos son isomorfos a $F$ y,
+		por tanto, $K[X]$-submódulos simples.
 		
 		% Pág 22
 		\item ** Sea $R$ un álgebra sobre un cuerpo de característica distinta de 2, y $a, b, e \in R$ idempotentes.
