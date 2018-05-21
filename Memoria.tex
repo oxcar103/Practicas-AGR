@@ -86,6 +86,21 @@
 	\newpage
 
 	\begin{enumerate}
-		\item
+		\item Si $r \in \mathbb{Q}$ es un entero algebraico, entonces $r \in \mathbb{Z}$\footnote{En el enunciado
+		original, era una $q$ pero por conveniencia de notación, la he cambiado.}.
+		\subsubsection*{Solución}
+		Supongamos que $r$ es un entero algebraico pero $r \notin \mathbb{Z}$ y sea $f(x) = x^n + a_{n-1}x^{n-1}
+		+ \dots + a_1x + a_0$ con $a_{n-1}, \dots, a_1, a_0 \in \mathbb{Z}$ el polinomio de coeficientes enteros
+		del que $r$ es raíz, esto es, $f(r) = 0$.
+		
+		Como $r \in \mathbb{Q}$ podemos expresarlo como $\displaystyle r = \frac{p}{q}$ con $(p, q) = 1$, entonces
+		nos queda que $\displaystyle f(r) = f\left(\frac{p}{q}\right) = \left(\frac{p}{q}\right)^n + a_{n-1}
+		\left(\frac{p}{q}\right)^{n-1} + \dots + a_1\frac{p}{q} + a_0 = 0$.
+		
+		Después, multiplicamos toda la expresión por $q^n$ para quitarnos los denominadores: $p^n + a_{n-1}qp^{n-1}
+		+ \dots + a_1q^{n-1}p + a_0q^n = 0$
+		
+		Llegados a este punto, vemos que $-p^n = q \cdot \left(a_{n-1}p^{n-1} + \dots + a_1q^{n-2}p + a_0q^{n-1}\right)
+		\Rightarrow q$ divide a $p^n$ pero recordemos que $(p, q) = 1$.
 	\end{enumerate}
 \end{document}
