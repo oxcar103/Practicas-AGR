@@ -86,6 +86,21 @@
 	\newpage
 
 	\begin{enumerate}
+		% Pág 22
+		\item ** Sea $R$ un álgebra sobre un cuerpo de característica distinta de 2, y $a, b, e \in R$ idempotentes.
+		Demostrar que si $e = a + b$, entonces $ab = ba = 0$. Si la característica es 2, encontrar un contraejemplo
+		con $a \neq b$.
+		\subsubsection*{Solución}
+		Si $e = a+b$ tenemos que $e^2 = (a+b)^2 = a^2 + b^2 + ab + ba = a + b + ab + ba = a+b \Rightarrow ab + ba
+		= 0 \Rightarrow ba = -ab \Leftrightarrow ab = -ba$ y volviendo a utilizar que $a$ y $b$ son idempotentes,
+		se llega a que $ab = a^2b = a(-ba) = -aba = (-ab)a = ba^2 = ba \Rightarrow 2ab = 2ba = ab + ba = 0$ pero
+		como la característica del cuerpo no es 2, la única posibilidad es que $ab = ba = 0$.
+		
+		Como contraejemplo, nos iremos al álgebra $M_2(\mathbb{F}_2)$ y tomaremos $a = I_2$, $\displaystyle b =
+		\begin{pmatrix} 1 & 0 \\ 0 & 0 \end{pmatrix}$, entonces $\displaystyle e = a+b = \begin{pmatrix} 0 & 0
+		\\ 0 & 1 \end{pmatrix}$, claramente todas son idempotentes pero $ab = ba = b \neq 0_{2,2}$.
+	
+		% Pág 43
 		\item Si $r \in \mathbb{Q}$ es un entero algebraico, entonces $r \in \mathbb{Z}$\footnote{En el enunciado
 		original, era una $q$ pero por conveniencia de notación, la he cambiado.}.
 		\subsubsection*{Solución}
