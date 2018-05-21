@@ -86,6 +86,24 @@
 	\newpage
 
 	\begin{enumerate}
+		% Pág 17
+		\item Sea $\mathbb{P}_n$ el espacio vectorial real de las funciones polinómicas en una variable de grado
+		menor o igual que $n$. Sea $T: \mathbb{P}_n \rightarrow \mathbb{P}_n$ la aplicación lineal que asigna a
+		cada polinomio su derivada. Calcular una serie de composición de $\mathbb{P}_n$ visto como $\mathbb{R}[X]
+		-módulo$ vía $T$.
+		\subsubsection*{Solución}
+		Sabemos que una base del espacio de polinomio de grado menor o igual que $k$ sería $M_k = \{1, \dots, x^k\}$.
+		Claramente, podemos ver que $<M_k> = <\{1, \dots, x^k\}>$ es un submódulo de $\mathbb{P}_n$ cerrado para
+		la derivada puesto que $M_k$ es base del espacio de polinomios de grado menor o igual que $k$ y, al estar
+		en un cuerpo de característica 0, su derivada es de grado menor o igual que $k-1$ y claramente $M_{k-1}
+		\subseteq <M_k>$.
+		
+		Además, dado que $M_k = <x^k> M_k/_{M_{k-1}}$ se tiene que $M_k$ es de dimensión 1 en el cuerpo de los
+		reales sobre $M_k/_{M_{k-1}}$ y por tanto simple.
+		
+		Así formaríamos la serie de descomposición: $0 \subset <M_1> \subset <M_2> \subset \dots \subset <M_n> =
+		\mathbb{P}_n$.
+		
 		% Pág 22
 		\item ** Sea $R$ un álgebra sobre un cuerpo de característica distinta de 2, y $a, b, e \in R$ idempotentes.
 		Demostrar que si $e = a + b$, entonces $ab = ba = 0$. Si la característica es 2, encontrar un contraejemplo
