@@ -147,6 +147,33 @@
 		Finalmente, por la forma de construcción de esta base, tenemos que sus elementos son isomorfos a $F$ y,
 		por tanto, $K[X]$-submódulos simples.
 		
+		% Pág 19
+		\item ** En las condiciones del ejercicio anterior, demostrar que el polinomio característico de $T$ es
+		$m(X)^t$.
+		\subsubsection*{Solución}
+		Empecemos porque $T$ debe satisfacer su ecuación característica por el Teorema de Cayley-Hamilton, y
+		como $m(X)$ es un divisor de todo polinomio $p(X)$ que cumpla $T$, en particular, $m(X)$ es un divisor
+		del polinomio característico de $T$.
+		
+		Veamos ahora que no sólo $m(X)$ divide al polinomio característico sino que es su único factor
+		irreducible, esto es, el polinomio característico de $T$ es de la forma $(m(X))^n$ para algún $n \in
+		\mathbb{N}$.
+		
+		Sea el polinomio $p(X)$ un factor irreducible del polinomio característico, entonces se tiene que
+		tiene una raíz $\alpha$ en la clausura algebraica de $K$. Esto equivale a tener un vector propio
+		$\lambda$ con coeficientes en la clausura de $K$ cumpliendo $T\lambda = \alpha\lambda$.
+		
+		Aplicando el polinomio mínimo al vector, tenemos que $0 = m(T)\lambda = m(\alpha)\lambda \Rightarrow
+		\alpha$ es una raíz en la clausura algebraica de $m(X)$. Por tanto, $p(X)$ es un factor irreducible
+		de $m(X)$, que también es irreducible, lo que nos lleva a que $m(X) = p(X) \Rightarrow$ el polinomio
+		característico de $T$ sólo tiene a $m(X)$ como único factor irreducible, es decir, es de la forma
+		$(m(X))^n$.
+		
+		Por último, como el grado del polinomio característico tiene el mismo valor que la dimensión del
+		espacio en que se genera, calcularemos la $dim_K(V)$. Por la construcción que hicimos de $V$ con
+		$V_1, V_2, \dots, V_t$ y que $V_i \cong F = K[X]/_{(m(X))} \Rightarrow dim_K(V) = t \cdot dim_K (V_i)
+		= t \cdot dim_K(F) = t \cdot gr(m(X)) \Rightarrow (m(X))^t$ es el polinomio característico.
+		
 		% Pág 22
 		\item ** Sea $R$ un álgebra sobre un cuerpo de característica distinta de 2, y $a, b, e \in R$ idempotentes.
 		Demostrar que si $e = a + b$, entonces $ab = ba = 0$. Si la característica es 2, encontrar un contraejemplo
