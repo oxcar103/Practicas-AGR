@@ -104,6 +104,24 @@
 		Así formaríamos la serie de descomposición: $0 \subset <M_1> \subset <M_2> \subset \dots \subset <M_n> =
 		\mathbb{P}_n$.
 		
+		% Pág 17
+		\item En las condiciones del ejercicio anterior, calcular todos los $\mathbb{R}-submódulos$ de $\mathbb{P}_n$.
+		\subsubsection*{Solución}
+		En el ejercicio anterior vimos los módulos de la forma $<M_k>$, que eran los que formaban la serie de
+		descomposición que dimos. Veamos ahora que estos son los únicos submódulos de $\mathbb{P}_n$.
+		
+		Supongamos que existen más submódulos de $\mathbb{P}_n$, entonces tomemos un polinomio $p(x) = x^k +
+		a_{k-1}x^{k-1} + \cdots + a_1x+a_0$ con $k \leq n \Rightarrow p(x) \in \mathbb{P}_n$ y sea $N_p$ el menor
+		submódulo tal que $p(x) \in N_p$.
+		
+		Como $N_p$ es un submódulo debe ser cerrado para $T$, luego se tiene
+		que $\delta p(x) = kx^{k-1} + (k-1)a_{k-1}x^{k-2} + \cdots + 2a_2x+a_1 \in N_p$ y análogamente se deduce
+		que$\delta^2 p(x), \dots, \delta^{k} \in N_p$, es decir, $<\{p, \delta p, \delta^2 p, \dots, \delta^k p\}>
+		\subseteq N_p$.
+		
+		Entonces, es inmediato comprobar que $ <M_k> \cong <\{p, \delta p, \delta^2 p, \dots, \delta^k p\}>$, y
+		se tiene que $<M_k> \subseteq N_p$ pero por cómo hemos definido $N_p$ se deduce que $<M_k> = N_p$.
+		
 		% Pág 22
 		\item ** Sea $R$ un álgebra sobre un cuerpo de característica distinta de 2, y $a, b, e \in R$ idempotentes.
 		Demostrar que si $e = a + b$, entonces $ab = ba = 0$. Si la característica es 2, encontrar un contraejemplo
