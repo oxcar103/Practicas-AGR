@@ -129,7 +129,14 @@
 		\item Sea $M$ un $A$-módulo. Demostrar que $M$ es simple $\Leftrightarrow M = Am \quad \forall 0 \neq m
 		\in M$.
 		\begin{proof}
-			\fbox{$\Leftarrow$}
+			\fbox{$\Rightarrow$} Tomamos $0 \neq m \in M$ Claramente, $Am$ es un submódulo no nulo de $M$, esto
+			es, $0 \subset Am \subseteq M$ pero como $M$ es simple, se tiene que $Am = M$. Luego, $M$ simple
+			$\Rightarrow Am = M \quad \forall 0 \neq m \in M$.
+			
+			\fbox{$\Leftarrow$} Sea $0 \subset N \subseteq M$ submódulo, tomamos entonces $0 \neq n \in N$.
+			Como $N$ es un submódulo, tiene que ser cerrado para producto por elementos de $A \Rightarrow An
+			\subseteq N$. Además, como $n \in N \subseteq M$, se tiene que $n$ cumple que $An = M$. Finalmente,
+			concluimos que $M = An \subseteq N \subseteq M \Rightarrow N = M \Rightarrow M$ es simple.
 		\end{proof}
 		
 		% Pág 17
