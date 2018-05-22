@@ -90,6 +90,42 @@
 
 	\begin{enumerate}
 		% Pág 17
+		\item * Consideramos $T: \mathbb{R}^3 \rightarrow \mathbb{R}^3$ una aplicación lineal, y la estructura
+		de $\mathbb{R}[X]$-módulo correspondiente sobre $\mathbb{R}^3$. Discutir los posibles valores de la
+		longitud de $\mathbb{R}^3$ como $\mathbb{R}$-módulo. Poner un ejemplo de $T$ para el que se alcance
+		cada longitud.
+		\subsubsection*{Solución}
+		Dado que la dimensión de $\mathbb{R}^3$ como espacio vectorial es 3, su longitud será, como máximo, 3.
+		
+		\begin{itemize}
+			\item \textbf{Longitud 1:} $0 \subseteq \mathbb{R}^3$, es decir, sería simple.
+			
+			Sin embargo, este caso no puede darse pues toda aplicación lineal $T: \mathbb{R}^3 \rightarrow
+			\mathbb{R}^3$ nos da una ecuación polinómica de grado 3 con coeficientes reales $|T - \lambda I|
+			= 0$ que tiene una solución en los reales. Por tanto, obtenemos así un subespacio estricto que
+			queda fijo por $T$, es decir, un submódulo $\Rightarrow$ no es simple.
+			
+			\item \textbf{Longitud 2:} $0 \subseteq N \subseteq \mathbb{R}^3$
+			
+			En este caso, necesitamos encontrar una aplicación que mueva un elemento bidimensional mientras
+			deja fija otro unideminensional. Por ejemplo, el giro sobre el eje (1, 0, 0):
+			
+			$$T = \begin{pmatrix}
+				1 & 0 & 0 \\
+				0 & 0 & 1 \\
+				0 & -1 & 0
+			\end{pmatrix}$$
+			
+			Claramente, el subespacio generado por el eje queda fijo por esta acción, así que se tiene que
+			$N = <(0, 1, 0), (0, 0, 1)>$.
+			
+			\item \textbf{Longitud 3:} $0 \subseteq N_1 \subseteq N_2 \subseteq \mathbb{R}^3$
+			
+			Este caso es el más fácil de todos pues nos baste con tomar $T = I_3$ para tener la descomposicón
+			$0 \subseteq <(1, 0, 0)> \subseteq <(1, 0, 0), (0, 1, 0)> \subseteq \mathbb{R}^3$.
+		\end{itemize}
+		
+		% Pág 17
 		\item Sea $\mathbb{P}_n$ el espacio vectorial real de las funciones polinómicas en una variable de grado
 		menor o igual que $n$. Sea $T: \mathbb{P}_n \rightarrow \mathbb{P}_n$ la aplicación lineal que asigna a
 		cada polinomio su derivada. Calcular una serie de composición de $\mathbb{P}_n$ visto como $\mathbb{R}[X]
