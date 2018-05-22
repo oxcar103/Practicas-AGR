@@ -89,6 +89,41 @@
 	\newpage
 
 	\begin{enumerate}
+		% Pág 6
+		\item * Calcular el centro del álgebra de matrices $M_n(K)$.
+		\subsubsection*{Solución}
+		Sea $C \in Z(M_n(K))$ y sean las matrices $E_{kl} = (\delta_{kl})_{i,j}$, es decir, las matrices con
+		1 en la posición $(k, l)$ y 0 en el resto.
+		
+		Entonces, se tiene $CE_{ij} =
+		\begin{pmatrix}
+			   0   &    0   & \dots  & {}^{\left.j\right)}c_{1i} & \dots  &    0   \\
+			   0   &    0   & \dots  &           c_{2i}          & \dots  &    0   \\
+			\vdots & \vdots &        &           \vdots          &        & \vdots \\
+			   0   &    0   & \dots  &           c_{ni}          & \dots  &    0
+		\end{pmatrix}$
+		y $E_{ij}C =
+		\begin{pmatrix}
+			             0            &    0   & \dots  &    0   \\
+			             0            &    0   & \dots  &    0   \\
+			          \vdots          & \vdots &        & \vdots \\
+			{}^{\left.i\right)}c_{j1} & c_{j2} & \dots  & c_{jn} \\
+			          \vdots          & \vdots &        & \vdots \\
+			             0            &    0   & \dots  &    0
+		\end{pmatrix}$
+		
+		Y claramente, se deduce que $CE_{ij} = E_{ij}C \Leftrightarrow
+		\begin{cases}
+			c_{jj} = c_{ii} \\
+			c_{ij} = 0 \qquad \forall i \neq j
+		\end{cases}$
+		
+		Dado que esta relación se debe cumplir $\forall i,j \in \{1, 2, \dots, n\}$, podemos concluir que $C =
+		c_{11}I_n = c_{22}I_n = \dots = c_{nn}I_n = cI_n$. Notemos además que $c$ puede ser cualquier elemento
+		de $K$ ya que $\forall A \in M_n(K)$ se tiene que $cI_nA = cA = Ac = AcI_n$.
+		
+		Por lo que, finalmente, hemos demostrado que $Z(M_n(K)) = \{kI_n: k \in K\}$.
+		
 		% Pág 17
 		\item * Consideramos $T: \mathbb{R}^3 \rightarrow \mathbb{R}^3$ una aplicación lineal, y la estructura
 		de $\mathbb{R}[X]$-módulo correspondiente sobre $\mathbb{R}^3$. Discutir los posibles valores de la
